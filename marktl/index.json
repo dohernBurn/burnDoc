@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-24T09:29:24.933Z",
+  "updatedAt": "2026-05-24T09:37:37.126Z",
   "items": [
     {
       "slug": "2026-04-29-korea-burn-pmg-ksba-oral-30min-draft1",
@@ -15,7 +15,7 @@
         "2026-04-29 v1.1: Burn-Care-Guideline-Inventory cluster ingest 후 Part 4 의 *2-층* 모델을 *4-층* 으로 확장. JSBI 우선순위 강조. References 보강.",
         "2026-05-03 v1.2: ABA-CPG 29 PDF detail 정착, SSC 2026 detail, Vanderbilt AMS 2025, 한국 PMG 우선순위 갱신분 반영. sources_updated_at bump."
       ],
-      "updatedAt": "2026-05-24T09:29:24.933Z"
+      "updatedAt": "2026-05-24T09:37:37.126Z"
     }
   ]
 }
