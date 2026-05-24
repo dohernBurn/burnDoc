@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>한국 화상센터에 institutional Practice Management Guideline 이 필요하다</title>
+  <style>
+    :root {
+      --bg: #f7f4ee;
+      --paper: #fffaf2;
+      --ink: #1f2933;
+      --muted: #6b7280;
+      --line: #ddd6c9;
+      --accent: #9b3f2f;
+      --accent-2: #1f6f78;
+      --soft: #efe5d6;
+      --soft-2: #e7f0ef;
+      --shadow: 0 18px 45px rgba(55, 45, 32, .12);
+      --radius: 8px;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, rgba(255,250,242,.7), rgba(247,244,238,1) 34%),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.75;
+      letter-spacing: 0;
+    }
+
+    a { color: var(--accent-2); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 22px 70px;
+    }
+
+    header.hero {
+      min-height: 72vh;
+      display: grid;
+      align-content: end;
+      padding: 72px 0 54px;
+      border-bottom: 1px solid var(--line);
+      position: relative;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: .9rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 980px;
+      font-family: Georgia, "Noto Serif KR", "Batang", serif;
+      font-size: clamp(2.2rem, 5.4vw, 5.9rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      color: #171717;
+    }
+
+    .subtitle {
+      margin: 22px 0 0;
+      max-width: 780px;
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      color: #4b5563;
+      line-height: 1.65;
+    }
+
+    .byline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 22px;
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .byline strong { color: var(--ink); }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 42px;
+      align-items: start;
+      margin-top: 34px;
+    }
+
+    aside {
+      position: sticky;
+      top: 18px;
+      align-self: start;
+      max-height: calc(100vh - 36px);
+      overflow: auto;
+      padding: 18px;
+      background: rgba(255, 250, 242, .78);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 24px rgba(55, 45, 32, .06);
+    }
+
+    aside h2 {
+      margin: 0 0 12px;
+      font-size: .92rem;
+      color: var(--accent);
+    }
+
+    .toc {
+      display: grid;
+      gap: 5px;
+      margin: 0 0 18px;
+      padding: 0;
+      list-style: none;
+      font-size: .92rem;
+      line-height: 1.45;
+    }
+
+    .toc a {
+      display: block;
+      padding: 7px 9px;
+      border-radius: 6px;
+      color: #374151;
+    }
+
+    .toc a.active {
+      color: #fff;
+      background: var(--accent-2);
+      text-decoration: none;
+    }
+
+    .tools {
+      display: grid;
+      gap: 8px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    button {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #fffaf2;
+      color: var(--ink);
+      border-radius: 6px;
+      padding: 9px 10px;
+      cursor: pointer;
+      font-weight: 700;
+      font-family: inherit;
+    }
+
+    button:hover {
+      border-color: var(--accent-2);
+      color: var(--accent-2);
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    section {
+      scroll-margin-top: 22px;
+      margin: 0 0 54px;
+    }
+
+    .section-band {
+      padding: 34px;
+      background: rgba(255, 250, 242, .9);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-family: Georgia, "Noto Serif KR", "Batang", serif;
+      font-size: clamp(1.7rem, 3vw, 2.55rem);
+      line-height: 1.22;
+      letter-spacing: 0;
+      color: #171717;
+    }
+
+    h3 {
+      margin: 34px 0 12px;
+      font-size: 1.18rem;
+      line-height: 1.35;
+      color: #111827;
+    }
+
+    p { margin: 0 0 16px; }
+
+    .lead {
+      font-size: 1.12rem;
+      color: #374151;
+    }
+
+    .abstract {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .abstract-box {
+      padding: 24px;
+      background: var(--soft-2);
+      border-left: 5px solid var(--accent-2);
+      border-radius: var(--radius);
+    }
+
+    .meta-grid,
+    .finding-grid,
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .meta-card,
+    .finding-card,
+    .priority-card {
+      padding: 18px;
+      background: #fffdf8;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .meta-card span,
+    .finding-card span,
+    .priority-card span {
+      display: block;
+      color: var(--accent);
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .finding-card strong,
+    .priority-card strong {
+      display: block;
+      font-size: 1.06rem;
+      margin-bottom: 6px;
+    }
+
+    .pullquote {
+      margin: 32px 0;
+      padding: 4px 0 4px 24px;
+      border-left: 5px solid var(--accent);
+      font-family: Georgia, "Noto Serif KR", "Batang", serif;
+      font-size: clamp(1.35rem, 2.4vw, 2rem);
+      line-height: 1.45;
+      color: #2f2520;
+    }
+
+    .note {
+      padding: 16px 18px;
+      background: var(--soft);
+      border: 1px solid #d8cab8;
+      border-radius: var(--radius);
+      color: #4b3f36;
+      font-size: .96rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 26px;
+      font-size: .95rem;
+      background: #fffdf8;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 13px;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      text-align: left;
+      background: #efe5d6;
+      color: #2f2520;
+      font-weight: 900;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .diagram {
+      display: grid;
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .tier-card {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px;
+      background: #fffdf8;
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--accent-2);
+      border-radius: var(--radius);
+    }
+
+    .tier-card:nth-child(2) { border-left-color: #a66a2a; }
+    .tier-card:nth-child(3) { border-left-color: #6b7280; }
+
+    .tier-title {
+      font-weight: 900;
+      color: #111827;
+    }
+
+    .tier-title small {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .pill-list li {
+      padding: 6px 10px;
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      font-size: .88rem;
+      line-height: 1.3;
+    }
+
+    .evidence {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    details {
+      background: #fffdf8;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 15px 18px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 900;
+      color: #111827;
+    }
+
+    details p, details ul { margin-top: 12px; }
+
+    ul, ol { padding-left: 1.25rem; }
+    li { margin-bottom: 8px; }
+
+    .source-list {
+      columns: 2;
+      column-gap: 34px;
+      font-size: .94rem;
+    }
+
+    .source-list li {
+      break-inside: avoid;
+      margin-bottom: 10px;
+    }
+
+    .footer-note {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .toast {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+      transition: .2s ease;
+      background: #111827;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: .9rem;
+      z-index: 50;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 920px) {
+      .layout { grid-template-columns: 1fr; }
+      aside {
+        position: relative;
+        top: auto;
+        max-height: none;
+      }
+      .abstract,
+      .meta-grid,
+      .finding-grid,
+      .priority-grid {
+        grid-template-columns: 1fr;
+      }
+      .tier-card {
+        grid-template-columns: 1fr;
+      }
+      .source-list {
+        columns: 1;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .page { padding: 20px 14px 48px; }
+      header.hero { min-height: auto; padding: 48px 0 34px; }
+      .section-band { padding: 22px 18px; }
+      th, td { padding: 10px 9px; }
+      table { font-size: .88rem; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { max-width: none; padding: 0; }
+      aside, .tools, .toast { display: none; }
+      .layout { display: block; }
+      .section-band { box-shadow: none; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+<meta property="og:type" content="article">
+<meta property="og:title" content="한국 화상센터에 institutional Practice Management Guideline 이 필요하다 — Vanderbilt 3-tier 모델의 적용 가능성">
+<meta property="og:description" content="— Vanderbilt 3tier 모델의 적용 가능성 김도헌, 한강성심병원 화상외과 대한화상학회 학술대회 (Oral Presentation, 30분) Date: TBD 발표 메타 분량: 30분 (발표 25분 + Q&amp;A 5분) slide 수: 약 25 slide (slide 당 60초) 언어: 한국어 (학술 영어 용어 보존">
+<meta property="og:url" content="https://dohernBurn.github.io/burnDoc/marktl/s/1ciwrnm/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="한국 화상센터에 institutional Practice Management Guideline 이 필요하다 — Vanderbilt 3-tier 모델의 적용 가능성">
+<meta name="twitter:description" content="— Vanderbilt 3tier 모델의 적용 가능성 김도헌, 한강성심병원 화상외과 대한화상학회 학술대회 (Oral Presentation, 30분) Date: TBD 발표 메타 분량: 30분 (발표 25분 + Q&amp;A 5분) slide 수: 약 25 slide (slide 당 60초) 언어: 한국어 (학술 영어 용어 보존">
+<link rel="canonical" href="https://dohernBurn.github.io/burnDoc/marktl/s/1ciwrnm/">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="kicker">Research Report · Editorial Blog</div>
+      <h1>한국 화상센터에 institutional Practice Management Guideline 이 필요하다</h1>
+      <p class="subtitle">Vanderbilt Burn Center 의 3-tier PMG 모델을 한국 화상외과 환경에 적용하기 위한 실행 중심 프레임워크</p>
+      <div class="byline">
+        <span><strong>김도헌</strong> · 한강성심병원 화상외과</span>
+        <span>Draft source updated: 2026-05-03</span>
+        <span>Target: 대한화상학회 oral presentation, 30분</span>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside aria-label="문서 내비게이션">
+        <h2>Contents</h2>
+        <ul class="toc" id="toc"></ul>
+        <div class="tools">
+          <button type="button" data-copy="abstract">초록 복사</button>
+          <button type="button" data-copy="outline">실행 outline 복사</button>
+        </div>
+      </aside>
+
+      <main>
+        <section id="abstract" class="section-band" data-title="초록">
+          <h2>초록</h2>
+          <div class="abstract">
+            <div>
+              <p class="lead" id="abstractText">한국 화상외과 임상에는 international 또는 national society guideline 과 실제 bedside order 사이를 연결하는 institutional Practice Management Guideline(PMG)의 층위가 충분히 명시되어 있지 않다. 이 공백은 항생제 선택, burn sepsis 판단, resuscitation endpoint, source control timing, 퇴원 및 이송 기준 등에서 임상의별 분산을 만들고, QI·교육·연구·법적 표준 판단의 기준을 흐리게 한다.</p>
+              <p>본 보고서는 Vanderbilt Burn Center 가 공개 운영하는 38개 PMG를 형식 reference 로 삼아, 한국 화상센터가 단일 센터 단계에서 시작할 수 있는 PMG 구축 전략을 제안한다. 핵심은 Vanderbilt 내용을 번역하는 것이 아니라, 4층 guideline landscape 안에서 society guideline 은 원칙으로, institutional PMG 는 센터 실행 표준으로 재배치하는 것이다.</p>
+            </div>
+            <div class="abstract-box">
+              <strong>핵심 주장</strong>
+              <p>한국 화상센터에는 “우리 센터에서 지금 어떻게 실행할 것인가”를 정의하는 문서 체계가 필요하다. Vanderbilt 3-tier 모델은 그 형식과 운영 방식의 좋은 출발점이다.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="metadata" data-title="발표 메타">
+          <h2>발표 메타</h2>
+          <div class="meta-grid">
+            <div class="meta-card"><span>Format</span>30분 oral presentation · 발표 25분 + Q&A 5분</div>
+            <div class="meta-card"><span>Audience</span>한국 화상외과 의사, 전공의, 전문의</div>
+            <div class="meta-card"><span>Assumption</span>SSC·ABA 등 society guideline 은 익숙하나 institutional PMG 층위는 명시적 인식이 약함</div>
+            <div class="meta-card"><span>Take-home</span>우리 센터에도 PMG 가 필요하며, 어디서 시작할지 framework 가 있다</div>
+          </div>
+        </section>
+
+        <section id="key-findings" class="section-band" data-title="Key Findings">
+          <h2>Key Findings</h2>
+          <div class="finding-grid">
+            <div class="finding-card">
+              <span>Finding 1</span>
+              <strong>분산은 임상 품질의 상한을 만든다</strong>
+              같은 TBSA, 같은 ICU day, 같은 fever 라도 임상의별 항생제·검사·de-escalation 판단이 달라지면 outcome, QI, 연구 정의가 모두 흔들린다.
+            </div>
+            <div class="finding-card">
+              <span>Finding 2</span>
+              <strong>Society guideline 은 실행 문서가 아니다</strong>
+              SSC, ABA, ISBI 는 원칙과 근거를 제공하지만, EHR order set, 약물 가용성, 로컬 antibiogram, 인력 구조까지 결정하지 않는다.
+            </div>
+            <div class="finding-card">
+              <span>Finding 3</span>
+              <strong>Institutional PMG 는 별도의 층위다</strong>
+              한 센터의 환자군, 자원, workflow, 법적 deviation 기준을 반영하는 operational standard 로 기능한다.
+            </div>
+            <div class="finding-card">
+              <span>Finding 4</span>
+              <strong>Vanderbilt 는 콘텐츠보다 운영 모델이 중요하다</strong>
+              38개 PDF, 3-tier 구조, owner, review date, source-specific decision tree, EHR alignment 가 핵심 reference 다.
+            </div>
+          </div>
+
+          <blockquote class="pullquote">Society guideline 은 “원칙”의 언어이고, institutional PMG 는 “우리 센터에서 오늘 어떻게 할 것인가”의 언어다.</blockquote>
+        </section>
+
+        <section id="problem" data-title="문제 정의">
+          <h2>문제 정의: 왜 같은 환자에게 다른 처방을 하는가</h2>
+          <p>가상의 45세 남성, 화염 화상 35% TBSA, ICU 입원 3일째를 생각해 보자. 한 임상의는 vancomycin + piperacillin-tazobactam 을 시작하고, 다른 임상의는 cefepime 과 procalcitonin 추적을 선택하며, 또 다른 임상의는 항생제를 보류하고 발열 추이를 본다. 세 접근 모두 특정 맥락에서는 합리적일 수 있다.</p>
+          <p>문제는 개별 판단의 합리성이 아니라, 센터 차원의 표준 부재다. 기준이 없으면 신입 의료진은 매번 다시 배우고, QI 팀은 “무엇이 표준인가”라는 질문에서 막히며, 연구자는 outcome 정의를 임상 workflow 와 분리해 작성하게 된다.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>분산이 만드는 것</th>
+                <th>실제 비용</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CLABSI, MRSA, LOS 등 outcome 차이</td>
+                <td>환자 안전과 치료 일관성 저하</td>
+              </tr>
+              <tr>
+                <td>QI baseline 부재</td>
+                <td>개선 전후 비교가 어려움</td>
+              </tr>
+              <tr>
+                <td>신입 의료진 학습 곡선 증가</td>
+                <td>교육이 개인 경험 전수에 의존</td>
+              </tr>
+              <tr>
+                <td>연구 outcome 정의 분산</td>
+                <td>센터 데이터의 internal consistency 감소</td>
+              </tr>
+              <tr>
+                <td>법적 위치 모호</td>
+                <td>표준 진료 deviation 판단 기준 부재</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="guideline-gap" class="section-band" data-title="Society Guideline Gap">
+          <h2>Society Guideline 의 원리적 갭</h2>
+          <p>Surviving Sepsis Campaign 2026, ABA Practice Guidelines, ISBI, IDSA, SCCM 같은 society guideline 은 전문가 패널과 근거 문헌을 바탕으로 일반 원칙을 제공한다. 그러나 화상 환자는 일반 sepsis 환자와 다르다. 이미 hyperinflammatory 상태이고, 대량 수액 resuscitation 을 받고 있으며, 감염 source 가 open wound 와 catheter 에 집중되고, pathogen profile 도 시간 경과에 따라 달라진다.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Society guideline 이 잘하는 것</th>
+                <th>Institutional 실행에서 비는 것</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>일반 원칙과 권고 등급 정의</td>
+                <td>특수 환자군에 대한 구체적 적용</td>
+              </tr>
+              <tr>
+                <td>RCT, meta-analysis 중심 근거 정리</td>
+                <td>RCT 부재 영역의 센터 합의</td>
+              </tr>
+              <tr>
+                <td>국제 또는 국가 단위 합의</td>
+                <td>로컬 약물 가용성, EHR, 인력 구조 반영</td>
+              </tr>
+              <tr>
+                <td>수년 단위 갱신</td>
+                <td>수개월 단위의 active maintenance</td>
+              </tr>
+              <tr>
+                <td>“해야 한다”의 방향 제시</td>
+                <td>“어떤 order set 으로 언제 실행할 것인가”의 결정</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="note">예: SSC 의 septic shock 30 mL/kg crystalloid bolus 는 일반 sepsis 에서는 원칙일 수 있지만, burn resuscitation 을 이미 진행 중인 환자에게는 Parkland formula, Rule of 10s, urine output endpoint 와 충돌할 수 있다.</div>
+        </section>
+
+        <section id="four-layer-model" data-title="4층 모델">
+          <h2>Guideline Landscape: 4층 모델</h2>
+          <p>“Society guideline”이라는 말 안에는 실제로 여러 층위가 숨어 있다. 한국 화상센터 PMG 를 설계하려면 국제, 국가, 지역 network, 단일 센터 institutional PMG 를 분리해서 보아야 한다.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>층위</th>
+                <th>정의</th>
+                <th>사례</th>
+                <th>한국 PMG 에서의 역할</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>국제/대륙 society</td>
+                <td>다국가 expert panel, 보편 원칙</td>
+                <td>ISBI, EBA</td>
+                <td>큰 방향과 최소 기준</td>
+              </tr>
+              <tr>
+                <td>국가 society</td>
+                <td>단일 국가 임상 시스템에 맞춘 권고</td>
+                <td>JSBI, ABA, BBA, ANZBA</td>
+                <td>한국 적용 전 비교 기준</td>
+              </tr>
+              <tr>
+                <td>지역 network</td>
+                <td>광역 다센터 합의</td>
+                <td>COBIS, LSEBN, NSW Statewide</td>
+                <td>학회 또는 다센터 운영 모델 참고</td>
+              </tr>
+              <tr>
+                <td>단일 센터 institutional PMG</td>
+                <td>한 센터의 자체 실행 표준</td>
+                <td>Vanderbilt, Clark, 한국 단일 센터 초안</td>
+                <td>가장 직접적인 실행 문서</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <blockquote class="pullquote">두 층이 아니라 네 층이다. 그리고 한국에서 지금 가장 비어 있는 층은 단일 센터 institutional PMG 다.</blockquote>
+        </section>
+
+        <section id="jsbi-priority" class="section-band" data-title="한국 적용 우선순위">
+          <h2>한국 적용 시 우선순위: JSBI + Vanderbilt</h2>
+          <p>한국 PMG 를 설계할 때 미국 ABA 나 Vanderbilt 만 보는 것은 충분하지 않다. 일본 JSBI 는 보험 구조, 인구 구조, 의료 시스템 면에서 한국과 더 가까운 reference 가 될 가능성이 높다. 따라서 권장 트랙은 JSBI 를 우선 매핑하고, Vanderbilt 는 문서 구조와 운영 방식의 reference 로 활용하며, ABA/BBA/ANZBA 를 보완 자료로 쓰는 방식이다.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>차원</th>
+                <th>미국</th>
+                <th>영국</th>
+                <th>일본</th>
+                <th>한국</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>인구</td>
+                <td>다인종</td>
+                <td>다인종</td>
+                <td>단일민족 중심</td>
+                <td>단일민족 중심</td>
+              </tr>
+              <tr>
+                <td>보험</td>
+                <td>사보험 + Medicare</td>
+                <td>NHS 단일</td>
+                <td>국민건강보험 단일</td>
+                <td>국민건강보험 단일</td>
+              </tr>
+              <tr>
+                <td>항생제 감시</td>
+                <td>CDC, NHSN</td>
+                <td>NHS stewardship</td>
+                <td>JANIS</td>
+                <td>KARMS</td>
+              </tr>
+              <tr>
+                <td>EHR</td>
+                <td>Epic 등</td>
+                <td>NHS Spine</td>
+                <td>부분 통합</td>
+                <td>부분 통합</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="vanderbilt-model" data-title="Vanderbilt 모델">
+          <h2>Vanderbilt Burn Center PMG: 형식 Reference</h2>
+          <p>Vanderbilt Burn Center 는 38개의 institutional PMG 를 외부 공개 형태로 운영한다. 중요한 점은 “그 내용을 한국에 그대로 가져오자”가 아니라, 한 burn center 가 PMG 를 어떻게 구조화하고, 갱신하고, 책임자를 명시하며, 임상 행동으로 연결하는지를 보는 것이다.</p>
+
+          <div class="diagram" aria-label="Vanderbilt 3-tier 구조">
+            <div class="tier-card">
+              <div class="tier-title">Burn Center 공통 <small>13 PMG</small></div>
+              <ul class="pill-list">
+                <li>입퇴원·이송 기준</li>
+                <li>드레싱·창상 escalation</li>
+                <li>BWI</li>
+                <li>Antimicrobial stewardship</li>
+                <li>특수 화상</li>
+                <li>가족 회의·완화</li>
+              </ul>
+            </div>
+            <div class="tier-card">
+              <div class="tier-title">Adult 전용 <small>14 PMG</small></div>
+              <ul class="pill-list">
+                <li>Acute burn resuscitation</li>
+                <li>Ventilator weaning</li>
+                <li>RSI</li>
+                <li>Central line</li>
+                <li>영양·전해질</li>
+                <li>VTE·stress ulcer·delirium</li>
+              </ul>
+            </div>
+            <div class="tier-card">
+              <div class="tier-title">Pediatric 전용 <small>11 PMG</small></div>
+              <ul class="pill-list">
+                <li>입원 기준</li>
+                <li>소아 resuscitation</li>
+                <li>영양</li>
+                <li>통증</li>
+                <li>Hypermetabolic management</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="note">이 구조의 장점은 “공통 + 환자군 분리”다. 성인 PMG 가 개정되어도 소아 workflow 전체가 흔들리지 않고, 공통 burn center 정책은 한 곳에서 유지된다.</div>
+        </section>
+
+        <section id="antimicrobial-example" class="section-band" data-title="Antimicrobial 예시">
+          <h2>실제 PMG 예시: Antimicrobial Stewardship</h2>
+          <p>Vanderbilt 의 BICU Antimicrobial Stewardship Guideline 은 institutional PMG 가 단순한 설명문이 아니라 행동 통일 도구라는 점을 잘 보여준다. 문서에는 다학제 owner, burn sepsis 기준, TBSA 기반 prophylaxis 분기, source-specific empiric regimen, de-escalation 기준, documentation 요구가 함께 들어간다.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>구성 요소</th>
+                <th>의미</th>
+                <th>한국 적용 시 질문</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>다학제 owner</td>
+                <td>Burn surgeon, ICU pharmacist, ID consult 등</td>
+                <td>한국 센터에서 책임자와 검토자는 누구인가?</td>
+              </tr>
+              <tr>
+                <td>8-criteria burn sepsis</td>
+                <td>Greenhalgh ABA 2007 기준 채택</td>
+                <td>SSC 기준과 burn-specific 기준을 어떻게 병행할 것인가?</td>
+              </tr>
+              <tr>
+                <td>TBSA 20% prophylaxis cutoff</td>
+                <td>&lt;20% routine prophylaxis 없음</td>
+                <td>국내 감염률, 수술 timing, 항생제 정책과 맞는가?</td>
+              </tr>
+              <tr>
+                <td>Source-specific empiric</td>
+                <td>BWI, pneumonia, line, urine 별 분기</td>
+                <td>KARMS 및 병원 antibiogram 기반으로 어떤 조합이 적절한가?</td>
+              </tr>
+              <tr>
+                <td>De-escalation</td>
+                <td>Negative culture, MRSA PCR, sensitivity, PCT 감소</td>
+                <td>검사 접근성, 비용, 보고 속도를 반영했는가?</td>
+              </tr>
+              <tr>
+                <td>Documentation</td>
+                <td>Indication, intervention, duration 기록</td>
+                <td>EHR template 또는 order set 으로 묶을 수 있는가?</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="korea-gap" data-title="한국 Gap Mapping">
+          <h2>한국 적용: 그대로, 수정 필요, 한국에만 필요</h2>
+          <p>PMG 작업의 본질은 번역이 아니라 gap mapping 이다. 어떤 항목은 보편 원칙으로 바로 적용할 수 있고, 어떤 항목은 한국의 약제·보험·격리실·인력·EHR 구조에 맞게 바꿔야 하며, 어떤 항목은 Vanderbilt 에 없지만 한국에서는 반드시 필요하다.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>범주</th>
+                <th>의미</th>
+                <th>예시</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>그대로</td>
+                <td>한국 화상 환경에서도 적용 가능한 원칙</td>
+                <td>Rule of 10s, 4종 BWI taxonomy, 8-criteria burn sepsis, AIBW/Baux/Ivy, UOP endpoint</td>
+              </tr>
+              <tr>
+                <td>수정 필요</td>
+                <td>한국 자원과 환자군에 맞게 조정</td>
+                <td>Mafenide 가용성, MRSA 정책, Vanc+Cefepime empiric, PCT cutoff, ICU 전담 약사</td>
+              </tr>
+              <tr>
+                <td>한국에만 필요</td>
+                <td>미국 PMG 에 없지만 국내 실행에 필수</td>
+                <td>보험·수가, 한국 EHR, KARMS 기반 항생제 정책, Burn Navigator 대체 전략</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>수정 필요 항목의 핵심</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>항목</th>
+                <th>Vanderbilt</th>
+                <th>한국 적용 시 고려</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mafenide 2.5% q8h</td>
+                <td>표준 처치 옵션</td>
+                <td>가용성, 비용, silver sulfadiazine·mupirocin 비교</td>
+              </tr>
+              <tr>
+                <td>MRSA nasal decolonization</td>
+                <td>ICU universal 정책</td>
+                <td>한국 MRSA 보균률, KARMS, 병원 감염관리 정책</td>
+              </tr>
+              <tr>
+                <td>Vanc + Cefepime empiric</td>
+                <td>BWI empiric 표준</td>
+                <td>로컬 antibiogram 기반 대체 필요</td>
+              </tr>
+              <tr>
+                <td>Burn Navigator</td>
+                <td>Fluid resuscitation 보조</td>
+                <td>라이선스, 도입 가능성, 국내 대체 도구</td>
+              </tr>
+              <tr>
+                <td>ICU 전담 약사</td>
+                <td>다학제 PMG 핵심 구성원</td>
+                <td>한국 센터별 정착도 차이</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="implementation" class="section-band" data-title="실행 Framework">
+          <h2>어디서 시작할까: 단계별 Framework</h2>
+          <p id="outlineText">현실적인 출발점은 학회 전체 합의가 아니라 단일 센터 0단계다. 한 센터에서 10-15개 핵심 PMG 초안을 만들고, 동료 검토를 거쳐, 학회 제안과 다센터 합의로 확장한다. 첫 실행 세트는 BWI 정의, burn sepsis/antimicrobial stewardship, acute burn resuscitation, early excision/source control, ED initial management, inhalation injury, 그리고 PMG 운영 헌법이다.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>단계</th>
+                <th>산출</th>
+                <th>시간축</th>
+                <th>주체</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0. 본인 정리</td>
+                <td>한 센터 자체 PMG 초안 10-15개</td>
+                <td>6-12개월</td>
+                <td>단독 가능</td>
+              </tr>
+              <tr>
+                <td>1. 동료 검토</td>
+                <td>Burn 전문가 1-2명 자문</td>
+                <td>+3개월</td>
+                <td>작성자 + 자문위원</td>
+              </tr>
+              <tr>
+                <td>2. 학회 제안</td>
+                <td>한국 화상외과학회 가이드라인 위원회 제안</td>
+                <td>+6개월</td>
+                <td>학회 위원회</td>
+              </tr>
+              <tr>
+                <td>3. 다센터 합의</td>
+                <td>다센터 expert panel 합의</td>
+                <td>1-2년</td>
+                <td>학회 + 다센터</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>0단계 최소 실행 세트</h3>
+          <div class="priority-grid">
+            <div class="priority-card"><span>1</span><strong>Burn Wound Infection 정의·진단</strong>BWI 2-tier + 4종 taxonomy</div>
+            <div class="priority-card"><span>2</span><strong>Burn Sepsis / Antimicrobial Stewardship</strong>8-criteria + empiric/de-escalation</div>
+            <div class="priority-card"><span>3</span><strong>Acute Burn Resuscitation</strong>Rule of 10s + 2 mL/kg/%TBSA + SSC gap 정리</div>
+            <div class="priority-card"><span>4</span><strong>Early Excision / Source Control</strong>24-96h first excision + 7일 completion 목표</div>
+            <div class="priority-card"><span>5</span><strong>ED Burn Initial Management</strong>Triage, consult, follow-up, supply checklist</div>
+            <div class="priority-card"><span>6</span><strong>Inhalation Injury</strong>CO, cyanide, bronchoscopy, extubation 기준</div>
+            <div class="priority-card"><span>7</span><strong>PMG 운영 헌법</strong>Owner, review cycle, deviation note, EHR/order set, metric</div>
+            <div class="priority-card"><span>Principle</span><strong>작성보다 유지가 어렵다</strong>문서 6개와 운영 헌법 1개를 함께 시작해야 한다</div>
+          </div>
+        </section>
+
+        <section id="implications" data-title="Implications">
+          <h2>Implications</h2>
+          <p>한국 화상센터 PMG 는 학회 guideline 의 대체물이 아니다. 오히려 society guideline 을 임상 실행으로 번역하는 중간층이다. 이 층위가 생기면 교육, QI, 연구, 법적 기준이 같은 문서를 바라볼 수 있다.</p>
+
+          <div class="evidence">
+            <details open>
+              <summary>임상 운영</summary>
+              <p>항생제, resuscitation, source control, inhalation injury 처치가 개인 선호가 아니라 센터 표준으로 정렬된다. 예외는 금지되는 것이 아니라 deviation note 로 기록된다.</p>
+            </details>
+            <details>
+              <summary>교육</summary>
+              <p>전공의와 신규 의료진은 “선배별 방식”이 아니라 PMG 기반 workflow 를 배운다. 교육 자료와 order set 이 같은 구조를 갖게 된다.</p>
+            </details>
+            <details>
+              <summary>QI 및 연구</summary>
+              <p>Outcome 정의, process metric, bundle compliance 를 PMG 와 연결할 수 있다. 센터 데이터의 internal consistency 가 올라간다.</p>
+            </details>
+            <details>
+              <summary>학회 확장</summary>
+              <p>단일 센터 PMG 가 active maintenance 를 증명하면 학회 차원의 표준화 논의에 더 강한 입력 자료가 된다.</p>
+            </details>
+          </div>
+        </section>
+
+        <section id="qa" class="section-band" data-title="예상 Q&A">
+          <h2>예상 Q&A</h2>
+          <div class="evidence">
+            <details open>
+              <summary>Q1. 이미 학회 차원의 PMG 가 있지 않나?</summary>
+              <p>명시적 burn-specific institutional PMG 는 부재한 것으로 보이나, 검증이 필요하다. 부분 자료가 있다면 본 제안은 “새로 만들자”보다 “체계화하고 운영 구조를 붙이자”에 가깝다.</p>
+            </details>
+            <details>
+              <summary>Q2. Vanderbilt 를 그대로 번역하면 안 되나?</summary>
+              <p>안 된다. Mafenide, KARMS, EHR, 보험, 격리실, ICU pharmacist 구조가 다르다. 단순 번역은 institutional PMG 의 핵심 가치인 local fit 을 약화시킨다.</p>
+            </details>
+            <details>
+              <summary>Q3. 단일 센터 PMG 가 학회 reference 가 될 수 있나?</summary>
+              <p>가능하다. Vanderbilt 가 그 사례다. 학회 합의 전이라도 active maintained institutional PMG 는 다른 센터가 참고할 수 있는 형식 reference 로 작동한다.</p>
+            </details>
+            <details>
+              <summary>Q4. 한국에서 active maintenance 는 어떻게 가능한가?</summary>
+              <p>0단계에서는 owner 명시, 연 1회 검토, EHR/order set 정렬이 핵심이다. 1단계 이후에는 학회 P&amp;P 위원회나 guideline committee 수준의 거버넌스가 필요하다.</p>
+            </details>
+          </div>
+        </section>
+
+        <section id="source-notes" data-title="Source Notes">
+          <h2>Source Notes</h2>
+          <p>이 문서는 제공된 Obsidian note 와 vault context 를 기반으로 작성한 standalone editorial research report 다. 정식 학회 제출 또는 논문화 단계에서는 PubMed/DOI, 학회 archive, KARMS 최신 보고서 확인이 필요하다.</p>
+
+          <ol class="source-list">
+            <li>Practice Management Guideline 패턴</li>
+            <li>Vanderbilt Burn Center Practice Management Guidelines 인덱스</li>
+            <li>Vanderbilt PMG — BICU Antimicrobial Stewardship Guidelines, June 2025</li>
+            <li>한국 화상센터 PMG 작성</li>
+            <li>Burn Sepsis — 일반 SSC 가이드라인 적용 시 갭</li>
+            <li>Surviving Sepsis Campaign 2026 Guidelines</li>
+            <li>Burn-Care-Guideline-Inventory 인덱스</li>
+            <li>ISBI Practice Guidelines for Burn Care, 2016</li>
+            <li>JSBI Clinical Practice Guidelines for Management of Burn Care, 3rd Edition</li>
+            <li>American Burn Association Clinical Practice Guidelines</li>
+            <li>British Burn Association Standards</li>
+            <li>ANZBA Management of Burns</li>
+            <li>ABA Blood Product Transfusion CPG 2025</li>
+            <li>ABA Burn Shock Resuscitation CPG 2023</li>
+          </ol>
+
+          <h3>검수 체크리스트</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>항목</th>
+                <th>필요 작업</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>정식 인용</td>
+                <td>Greenhalgh 2007, Peck BWI taxonomy, ABA CPG, SSC 2026 등 PubMed/DOI 확보</td>
+              </tr>
+              <tr>
+                <td>한국 guideline 부재 검증</td>
+                <td>한국화상학회 archive 및 국내 문헌 검색</td>
+              </tr>
+              <tr>
+                <td>KARMS</td>
+                <td>최신 antibiogram 자료로 empiric regimen 논의 보강</td>
+              </tr>
+              <tr>
+                <td>Figure</td>
+                <td>Vanderbilt 3-tier 구조와 4-layer landscape 를 학회 slide 용으로 시각화</td>
+              </tr>
+              <tr>
+                <td>후속 산출물</td>
+                <td>Poster, review article, 전공의 lecture 버전으로 확장 가능</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="footer-note">
+            Lifecycle: Draft → Review → Ready → Published. 현재 문서는 draft source 를 읽기용 editorial research report 로 재구성한 버전이다.
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">복사했습니다</div>
+
+  <script>
+    (function () {
+      const sections = Array.from(document.querySelectorAll("main section[id]"));
+      const toc = document.getElementById("toc");
+
+      sections.forEach((section) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = "#" + section.id;
+        a.textContent = section.dataset.title || section.querySelector("h2").textContent;
+        li.appendChild(a);
+        toc.appendChild(li);
+      });
+
+      const links = Array.from(toc.querySelectorAll("a"));
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter(entry => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (!visible) return;
+        links.forEach(link => link.classList.toggle("active", link.getAttribute("href") === "#" + visible.target.id));
+      }, { rootMargin: "-20% 0px -65% 0px", threshold: [0.1, 0.25, 0.5] });
+
+      sections.forEach(section => observer.observe(section));
+
+      const toast = document.getElementById("toast");
+      function showToast(text) {
+        toast.textContent = text;
+        toast.classList.add("show");
+        window.setTimeout(() => toast.classList.remove("show"), 1600);
+      }
+
+      document.querySelectorAll("[data-copy]").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const target = button.dataset.copy === "abstract" ? "abstractText" : "outlineText";
+          const text = document.getElementById(target).textContent.trim();
+          try {
+            await navigator.clipboard.writeText(text);
+            showToast("복사했습니다");
+          } catch (error) {
+            showToast("복사 기능을 사용할 수 없습니다");
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
